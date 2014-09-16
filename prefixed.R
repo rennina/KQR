@@ -9,6 +9,8 @@ p <- 2
 #tau <- 0.3
 tau <- 0.5  # set tau = 50%
 
+
+
 # 200 training data
 tr.x <- matrix(runif(n*p, 0, 1), nrow = n, ncol = p)
 tr.f <- 40 * exp(8*(tr.x[, 1]-0.5)^2 + (tr.x[, 2]-0.5)^2) * (exp(8*(tr.x[, 1]-0.2)^2 + (tr.x[, 2]-0.7)^2) + exp(8*(tr.x[, 1]-0.7)^2 + (tr.x[, 2]-0.2)^2))^(-1)
